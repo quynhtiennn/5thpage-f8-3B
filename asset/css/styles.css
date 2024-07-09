@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-green: #143c3c;
+    --primary-color-black: #152427;
+    --secondary-color-light-green: #e2eddf;
+    --text-color: #575d5e;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========== Common ========== */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 57px;
+
+    min-width: 173px;
+    height: var(--height);
+    padding: 0 20px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(var(--height) - 7px);
+    border-radius: 40px;
+    border: 1.5px solid var(--primary-color-green);
+    background: var(--primary-color-green);
+}
+
+.section-heading {
+}
+
+/* ========== Header ========== */
+.header {
+    padding: 28px 0px 6px;
+    font-family: "Public Sans", sans-serif;
+    position: sticky;
+}
+
+.header__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 88px;
+}
+
+.header__inner::after {
+    position: absolute;
+    bottom: -6px;
+    content: "";
+    display: block;
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+    z-index: 1;
+}
+
+.logo {
+    width: 40.7%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo__icon {
+    width: 26.24px;
+    height: 26.24px;
+}
+
+.logo__name {
+    width: 111.9px;
+    height: 14.86px;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 38px;
+}
+
+.navbar__link {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+
+.navbar__link--active {
+    position: relative;
+    color: var(--primary-color-black);
+}
+
+.navbar__link--active::after {
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: var(--primary-color-green);
+    z-index: 2;
+}
+
+/* ========== Intro ========== */
+.intro {
+    font-family: "Public Sans", sans-serif;
+    padding: 28px 23px 87px 0;
+}
+
+.intro__inner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__content {
+    width: 45.3%;
+}
+
+.intro__heading,
+.intro__desc {
+    width: 71.3%;
+}
+
+.intro__heading {
+    margin: 43px 0px 20px;
+    color: var(--primary-color-black);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.intro__desc {
+    margin-bottom: 42px;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.intro__content-row {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.intro__video {
+    display: flex;
+    align-items: center;
+}
+
+.intro__play {
+    margin: 0 15px 0 -22px;
+}
+
+.intro__watch {
+    color: var(--primary-color-black);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.intro__images {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.intro__images::before {
+    position: absolute;
+    top: 122px;
+    left: 156px;
+    content: "";
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+
+.decor-above {
+    position: absolute;
+    top: -25px;
+    left: -138px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.decor-above__line {
+    margin-left: -38px;
+}
+
+.intro__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.intro__img:nth-of-type(2) {
+    margin-top: 77px;
+}
+
+.decor-below {
+    position: absolute;
+bottom: -35px;
+right: 0px;
+    display: flex;
+align-items: flex-end;
+}
+
+.decor-below__line {
+    margin-right: -44px;
+    transform: rotate(4deg)
+}
+
+
+/* ========== Customer ========== */
+/* ========== Service ========== */
+/* ========== Info ========== */
+/* ========== Process ========== */
+/* ========== Sample ========== */
+/* ========== Feature ========== */
+/* ========== Blog ========== */
+/* ========== Footer ========== */

@@ -53,6 +53,11 @@ a {
 }
 
 .section-heading {
+    color: var(--primary-color-black);
+    font-family: Poppins, sans-serif;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
 }
 
 /* ========== Header ========== */
@@ -270,7 +275,122 @@ a {
 .customer__logo:first-child {
     padding-top: 10px;
 }
+
 /* ========== Service ========== */
+.service {
+    margin: 100px 0px;
+}
+
+.service__title {
+    margin-left: 35px;
+    margin-bottom: 12px;
+    position: relative;
+    color: var(--primary-color-black);
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+}
+
+.service__title::before {
+    position: absolute;
+    top: 6px;
+    left: -35px;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--primary-color-black);
+}
+
+.service__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.service__heading {
+    position: relative;
+    width: 45.6%;
+}
+
+.service__heading::after {
+    position: absolute;
+    bottom: 19px;
+    right: 103px;
+    content: "";
+    display: block;
+    width: 66px;
+    height: 3px;
+    background: var(--primary-color-black);
+}
+
+.service__control-arrow {
+    color: var(--primary-color-green);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 99%;
+    background: var(--secondary-color-light-green);
+    transition: 0.25s;
+}
+
+.service__control-arrow:nth-child(2) {
+    rotate: 180deg;
+}
+
+.service__control-arrow:hover {
+    color: #fff;
+    background: var(--primary-color-black);
+}
+
+.service-list {
+    margin-top: 76px;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.service-item {
+    width: 370px;
+    height: 454px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-item__img {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service-item__body {
+    margin: 24px 100px 24px 4px;
+}
+
+.service-item__heading-box {
+    margin-bottom: 18px;
+}
+
+.service-item__heading {
+    color: var(--primary-color-black);
+    font-size: 0.2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__desc {
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
 /* ========== Info ========== */
 /* ========== Process ========== */
 /* ========== Sample ========== */

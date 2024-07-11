@@ -117,19 +117,19 @@
                         <ul class="navbar__list">
                             <li>
                                 <a
-                                    href="#!"
+                                    href="#"
                                     class="navbar__link navbar__link--active"
                                     >Home</a
                                 >
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">About</a>
+                                <a href="#info" class="navbar__link">About</a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">Blog</a>
+                                <a href="#blog" class="navbar__link">Blog</a>
                             </li>
                             <li>
-                                <a href="#!" class="navbar__link">Contact</a>
+                                <a href="#footer" class="navbar__link">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -465,7 +465,7 @@
             </section>
 
             <!-- Info -->
-            <section class="info">
+            <section class="info" id="info">
                 <div class="container">
                     <section class="info__inner">
                         <!-- Left part -->
@@ -770,7 +770,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <div class="section-title">BLOG & ARTICLES</div>
@@ -874,5 +874,137 @@
         </main>
 
         <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- Left part -->
+                    <div class="footer-cta">
+                        <h3 class="footer-cta__call">
+                            Sign up for our newsletter
+                        </h3>
+                        <input
+                            type="text"
+                            class="footer-cta__input"
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        />
+                        <button class="footer-cta__submit" type="submit">
+                            <svg
+                                width="26"
+                                height="16"
+                                viewBox="0 0 22 13"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                                    stroke="#C4C4C4"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                        <div class="footer-cta__media-group">
+                            <a href="#!" class="footer-cta__icon">
+                                <svg
+                                    width="52"
+                                    height="52"
+                                    viewBox="0 0 52 52"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="26"
+                                        cy="26"
+                                        r="25.5"
+                                        stroke="none"
+                                    />
+                                    <path
+                                        d="M22.8401 36.5406H26.8051V24.6326H29.5135V21.5132H26.8051V20.8894C26.8051 19.2076 27.4473 18.6108 29.346 18.6651V15.4643C24.9901 15.3558 22.8401 17.0647 22.8401 20.7537V21.5132H21.0811V24.6326H22.8401V36.5406Z"
+                                        fill="#FBFBFB"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer-cta__icon">
+                                <svg
+                                    width="52"
+                                    height="52"
+                                    viewBox="0 0 52 52"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="26"
+                                        cy="26"
+                                        r="26"
+                                        fill="none"
+                                    />
+                                    <rect
+                                        x="17.8652"
+                                        y="17.8647"
+                                        width="16.2703"
+                                        height="16.2703"
+                                        rx="2"
+                                        stroke="#FCFCFC"
+                                        stroke-width="2"
+                                    />
+                                    <circle
+                                        cx="25.9998"
+                                        cy="25.9998"
+                                        r="3.01351"
+                                        stroke="#FCFCFC"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer-cta__icon">
+                                <img src="./asset/icon/twitter.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right part -->
+                    <div class="footer__content">
+                        <div class="footer-column">
+                            <div class="footer-column__heading">Pages</div>
+                            <a href="#!" class="footer-column__link">Home</a>
+                            <a href="#!" class="footer-column__link">About</a>
+                            <a href="#!" class="footer-column__link">Blog</a>
+                            <a href="#!" class="footer-column__link"
+                                >Blog Post</a
+                            >
+                        </div>
+                        <div class="footer-column">
+                            <div class="footer-column__heading">Product</div>
+                            <a href="#!" class="footer-column__link">Home</a>
+                            <a href="#!" class="footer-column__link">About</a>
+                            <a href="#!" class="footer-column__link">Blog</a>
+                            <a href="#!" class="footer-column__link"
+                                >Blog Post</a
+                            >
+                        </div>
+                        <div class="footer-column">
+                            <div class="footer-column__heading">Overview</div>
+                            <a href="#!" class="footer-column__link">Home1</a>
+                            <a href="#!" class="footer-column__link">Home2</a>
+                            <a href="#!" class="footer-column__link">Home3</a>
+                            <a href="#!" class="footer-column__link"
+                                >Pricing1</a
+                            >
+                        </div>
+                        <div class="footer-column">
+                            <div class="footer-column__heading">About us</div>
+                            <a href="#!" class="footer-column__link">Team</a>
+                            <a href="#!" class="footer-column__link"
+                                >Investors</a
+                            >
+                            <a href="#!" class="footer-column__link">Blog</a>
+                            <a href="#!" class="footer-column__link">Press</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
